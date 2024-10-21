@@ -1,0 +1,17 @@
+C:\Users\whoisonezero\source\repos\VB_InventoryMan\bin\Debug\net8.0-windows\VB_InventoryMan.exe
+C:\Users\whoisonezero\source\repos\VB_InventoryMan\bin\Debug\net8.0-windows\VB_InventoryMan.deps.json
+C:\Users\whoisonezero\source\repos\VB_InventoryMan\bin\Debug\net8.0-windows\VB_InventoryMan.runtimeconfig.json
+C:\Users\whoisonezero\source\repos\VB_InventoryMan\bin\Debug\net8.0-windows\VB_InventoryMan.dll
+C:\Users\whoisonezero\source\repos\VB_InventoryMan\bin\Debug\net8.0-windows\VB_InventoryMan.pdb
+C:\Users\whoisonezero\source\repos\VB_InventoryMan\obj\Debug\net8.0-windows\VB_InventoryMan.Form1.resources
+C:\Users\whoisonezero\source\repos\VB_InventoryMan\obj\Debug\net8.0-windows\VB_InventoryMan.vbproj.GenerateResource.cache
+C:\Users\whoisonezero\source\repos\VB_InventoryMan\obj\Debug\net8.0-windows\VB_InventoryMan.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\whoisonezero\source\repos\VB_InventoryMan\obj\Debug\net8.0-windows\VB_InventoryMan.AssemblyInfoInputs.cache
+C:\Users\whoisonezero\source\repos\VB_InventoryMan\obj\Debug\net8.0-windows\VB_InventoryMan.AssemblyInfo.vb
+C:\Users\whoisonezero\source\repos\VB_InventoryMan\obj\Debug\net8.0-windows\VB_InventoryMan.vbproj.CoreCompileInputs.cache
+C:\Users\whoisonezero\source\repos\VB_InventoryMan\obj\Debug\net8.0-windows\VB_InventoryMan.sourcelink.json
+C:\Users\whoisonezero\source\repos\VB_InventoryMan\obj\Debug\net8.0-windows\VB_InventoryMan.dll
+C:\Users\whoisonezero\source\repos\VB_InventoryMan\obj\Debug\net8.0-windows\refint\VB_InventoryMan.dll
+C:\Users\whoisonezero\source\repos\VB_InventoryMan\obj\Debug\net8.0-windows\VB_InventoryMan.pdb
+C:\Users\whoisonezero\source\repos\VB_InventoryMan\obj\Debug\net8.0-windows\VB_InventoryMan.genruntimeconfig.cache
+C:\Users\whoisonezero\source\repos\VB_InventoryMan\obj\Debug\net8.0-windows\ref\VB_InventoryMan.dll
