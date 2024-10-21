@@ -16,7 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("VB_InventoryMan"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2dc9b7c9fad514c6c7424fbdefbabee10e7de026"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a9cd2904d6c33bcc9b7d2c495857c33db514514d"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("VB_InventoryMan"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("VB_InventoryMan"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _
