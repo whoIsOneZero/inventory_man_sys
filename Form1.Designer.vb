@@ -24,24 +24,39 @@ Partial Class Form1
     Private Sub InitializeComponent()
         TabControl1 = New TabControl()
         TabPage1 = New TabPage()
-        TextBox8 = New TextBox()
-        TextBox9 = New TextBox()
-        TextBox11 = New TextBox()
-        TextBox12 = New TextBox()
-        TextBox13 = New TextBox()
-        TextBox14 = New TextBox()
-        TextBox7 = New TextBox()
-        TextBox6 = New TextBox()
-        TextBox5 = New TextBox()
-        TextBox4 = New TextBox()
-        TextBox3 = New TextBox()
-        TextBox2 = New TextBox()
+        cmbAcc_Status = New ComboBox()
+        btnEnd = New Button()
+        btnDelete = New Button()
+        btnPrevious = New Button()
+        btnNext = New Button()
+        btnSave = New Button()
+        btnAdd = New Button()
+        GroupBox1 = New GroupBox()
+        txtPassword = New TextBox()
+        txtUsername = New TextBox()
+        btnExit = New Button()
+        BtnReset = New Button()
+        btnLogin = New Button()
+        lblPassword = New Label()
+        lblUsername = New Label()
+        lblTitle = New Label()
+        txtEmail = New TextBox()
+        txtFax = New TextBox()
+        txtTelephone = New TextBox()
+        txtwww = New TextBox()
+        txtMobile = New TextBox()
+        txtPostCode = New TextBox()
+        txtAddress = New TextBox()
+        txtBalance = New TextBox()
+        txtName = New TextBox()
+        txtVatNum = New TextBox()
+        txtContactName = New TextBox()
         txtAccountNum = New TextBox()
         lblAccStatus = New Label()
         lblwww = New Label()
         lblEmail = New Label()
-        txtFax = New Label()
-        txtTelephone = New Label()
+        lblFax = New Label()
+        lblTelephone = New Label()
         lblMobile = New Label()
         lblBalance = New Label()
         lblVATNum = New Label()
@@ -52,18 +67,11 @@ Partial Class Form1
         lblAccountNum = New Label()
         TabPage2 = New TabPage()
         TabPage3 = New TabPage()
-        GroupBox1 = New GroupBox()
-        txtPassword = New TextBox()
-        txtUsername = New TextBox()
-        btnExit = New Button()
-        BtnReset = New Button()
-        btnLogin = New Button()
-        lblPassword = New Label()
-        lblUsername = New Label()
-        lblTitle = New Label()
+        DataGridView1 = New DataGridView()
         TabControl1.SuspendLayout()
         TabPage1.SuspendLayout()
         GroupBox1.SuspendLayout()
+        CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' TabControl1
@@ -81,24 +89,32 @@ Partial Class Form1
         ' TabPage1
         ' 
         TabPage1.BackColor = SystemColors.Control
-        TabPage1.Controls.Add(TextBox8)
-        TabPage1.Controls.Add(TextBox9)
-        TabPage1.Controls.Add(TextBox11)
-        TabPage1.Controls.Add(TextBox12)
-        TabPage1.Controls.Add(TextBox13)
-        TabPage1.Controls.Add(TextBox14)
-        TabPage1.Controls.Add(TextBox7)
-        TabPage1.Controls.Add(TextBox6)
-        TabPage1.Controls.Add(TextBox5)
-        TabPage1.Controls.Add(TextBox4)
-        TabPage1.Controls.Add(TextBox3)
-        TabPage1.Controls.Add(TextBox2)
+        TabPage1.Controls.Add(DataGridView1)
+        TabPage1.Controls.Add(cmbAcc_Status)
+        TabPage1.Controls.Add(btnEnd)
+        TabPage1.Controls.Add(btnDelete)
+        TabPage1.Controls.Add(btnPrevious)
+        TabPage1.Controls.Add(btnNext)
+        TabPage1.Controls.Add(btnSave)
+        TabPage1.Controls.Add(btnAdd)
+        TabPage1.Controls.Add(GroupBox1)
+        TabPage1.Controls.Add(txtEmail)
+        TabPage1.Controls.Add(txtFax)
+        TabPage1.Controls.Add(txtTelephone)
+        TabPage1.Controls.Add(txtwww)
+        TabPage1.Controls.Add(txtMobile)
+        TabPage1.Controls.Add(txtPostCode)
+        TabPage1.Controls.Add(txtAddress)
+        TabPage1.Controls.Add(txtBalance)
+        TabPage1.Controls.Add(txtName)
+        TabPage1.Controls.Add(txtVatNum)
+        TabPage1.Controls.Add(txtContactName)
         TabPage1.Controls.Add(txtAccountNum)
         TabPage1.Controls.Add(lblAccStatus)
         TabPage1.Controls.Add(lblwww)
         TabPage1.Controls.Add(lblEmail)
-        TabPage1.Controls.Add(txtFax)
-        TabPage1.Controls.Add(txtTelephone)
+        TabPage1.Controls.Add(lblFax)
+        TabPage1.Controls.Add(lblTelephone)
         TabPage1.Controls.Add(lblMobile)
         TabPage1.Controls.Add(lblBalance)
         TabPage1.Controls.Add(lblVATNum)
@@ -114,90 +130,232 @@ Partial Class Form1
         TabPage1.TabIndex = 0
         TabPage1.Text = "Customer Details"
         ' 
-        ' TextBox8
+        ' cmbAcc_Status
         ' 
-        TextBox8.Location = New Point(713, 190)
-        TextBox8.Name = "TextBox8"
-        TextBox8.Size = New Size(276, 35)
-        TextBox8.TabIndex = 28
+        cmbAcc_Status.FormattingEnabled = True
+        cmbAcc_Status.Location = New Point(713, 311)
+        cmbAcc_Status.Name = "cmbAcc_Status"
+        cmbAcc_Status.Size = New Size(276, 38)
+        cmbAcc_Status.TabIndex = 36
         ' 
-        ' TextBox9
+        ' btnEnd
         ' 
-        TextBox9.Location = New Point(713, 127)
-        TextBox9.Name = "TextBox9"
-        TextBox9.Size = New Size(276, 35)
-        TextBox9.TabIndex = 27
+        btnEnd.Location = New Point(1062, 311)
+        btnEnd.Name = "btnEnd"
+        btnEnd.Size = New Size(137, 36)
+        btnEnd.TabIndex = 34
+        btnEnd.Text = "End"
+        btnEnd.UseVisualStyleBackColor = True
         ' 
-        ' TextBox11
+        ' btnDelete
         ' 
-        TextBox11.Location = New Point(713, 78)
-        TextBox11.Name = "TextBox11"
-        TextBox11.Size = New Size(276, 35)
-        TextBox11.TabIndex = 25
+        btnDelete.Location = New Point(1062, 247)
+        btnDelete.Name = "btnDelete"
+        btnDelete.Size = New Size(137, 36)
+        btnDelete.TabIndex = 33
+        btnDelete.Text = "Delete"
+        btnDelete.UseVisualStyleBackColor = True
         ' 
-        ' TextBox12
+        ' btnPrevious
         ' 
-        TextBox12.Location = New Point(713, 311)
-        TextBox12.Name = "TextBox12"
-        TextBox12.Size = New Size(276, 35)
-        TextBox12.TabIndex = 24
+        btnPrevious.Location = New Point(1062, 190)
+        btnPrevious.Name = "btnPrevious"
+        btnPrevious.Size = New Size(137, 36)
+        btnPrevious.TabIndex = 32
+        btnPrevious.Text = "Previous"
+        btnPrevious.UseVisualStyleBackColor = True
         ' 
-        ' TextBox13
+        ' btnNext
         ' 
-        TextBox13.Location = New Point(713, 247)
-        TextBox13.Name = "TextBox13"
-        TextBox13.Size = New Size(276, 35)
-        TextBox13.TabIndex = 23
+        btnNext.Location = New Point(1062, 129)
+        btnNext.Name = "btnNext"
+        btnNext.Size = New Size(137, 36)
+        btnNext.TabIndex = 31
+        btnNext.Text = "Next"
+        btnNext.UseVisualStyleBackColor = True
         ' 
-        ' TextBox14
+        ' btnSave
         ' 
-        TextBox14.Location = New Point(713, 28)
-        TextBox14.Name = "TextBox14"
-        TextBox14.Size = New Size(276, 35)
-        TextBox14.TabIndex = 22
+        btnSave.Location = New Point(1062, 77)
+        btnSave.Name = "btnSave"
+        btnSave.Size = New Size(137, 36)
+        btnSave.TabIndex = 30
+        btnSave.Text = "Save"
+        btnSave.UseVisualStyleBackColor = True
         ' 
-        ' TextBox7
+        ' btnAdd
         ' 
-        TextBox7.Location = New Point(179, 280)
-        TextBox7.Name = "TextBox7"
-        TextBox7.Size = New Size(323, 35)
-        TextBox7.TabIndex = 21
+        btnAdd.Location = New Point(1062, 27)
+        btnAdd.Name = "btnAdd"
+        btnAdd.Size = New Size(137, 36)
+        btnAdd.TabIndex = 29
+        btnAdd.Text = "Add"
+        btnAdd.UseVisualStyleBackColor = True
         ' 
-        ' TextBox6
+        ' GroupBox1
         ' 
-        TextBox6.Location = New Point(179, 127)
-        TextBox6.Multiline = True
-        TextBox6.Name = "TextBox6"
-        TextBox6.Size = New Size(323, 122)
-        TextBox6.TabIndex = 20
+        GroupBox1.Controls.Add(txtPassword)
+        GroupBox1.Controls.Add(txtUsername)
+        GroupBox1.Controls.Add(btnExit)
+        GroupBox1.Controls.Add(BtnReset)
+        GroupBox1.Controls.Add(btnLogin)
+        GroupBox1.Controls.Add(lblPassword)
+        GroupBox1.Controls.Add(lblUsername)
+        GroupBox1.Controls.Add(lblTitle)
+        GroupBox1.Location = New Point(3, 545)
+        GroupBox1.Name = "GroupBox1"
+        GroupBox1.Size = New Size(1321, 633)
+        GroupBox1.TabIndex = 0
+        GroupBox1.TabStop = False
+        GroupBox1.Text = "GroupBox1"
         ' 
-        ' TextBox5
+        ' txtPassword
         ' 
-        TextBox5.Location = New Point(179, 456)
-        TextBox5.Name = "TextBox5"
-        TextBox5.Size = New Size(323, 35)
-        TextBox5.TabIndex = 19
+        txtPassword.Location = New Point(248, 207)
+        txtPassword.Name = "txtPassword"
+        txtPassword.PasswordChar = "*"c
+        txtPassword.Size = New Size(260, 35)
+        txtPassword.TabIndex = 7
         ' 
-        ' TextBox4
+        ' txtUsername
         ' 
-        TextBox4.Location = New Point(179, 78)
-        TextBox4.Name = "TextBox4"
-        TextBox4.Size = New Size(323, 35)
-        TextBox4.TabIndex = 18
+        txtUsername.Location = New Point(248, 139)
+        txtUsername.Name = "txtUsername"
+        txtUsername.Size = New Size(260, 35)
+        txtUsername.TabIndex = 6
         ' 
-        ' TextBox3
+        ' btnExit
         ' 
-        TextBox3.Location = New Point(179, 401)
-        TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(323, 35)
-        TextBox3.TabIndex = 17
+        btnExit.Location = New Point(433, 274)
+        btnExit.Name = "btnExit"
+        btnExit.Size = New Size(75, 23)
+        btnExit.TabIndex = 5
+        btnExit.Text = "Exit"
+        btnExit.UseVisualStyleBackColor = True
         ' 
-        ' TextBox2
+        ' BtnReset
         ' 
-        TextBox2.Location = New Point(179, 337)
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(323, 35)
-        TextBox2.TabIndex = 16
+        BtnReset.Location = New Point(317, 274)
+        BtnReset.Name = "BtnReset"
+        BtnReset.Size = New Size(75, 23)
+        BtnReset.TabIndex = 4
+        BtnReset.Text = "Reset"
+        BtnReset.UseVisualStyleBackColor = True
+        ' 
+        ' btnLogin
+        ' 
+        btnLogin.Location = New Point(194, 274)
+        btnLogin.Name = "btnLogin"
+        btnLogin.Size = New Size(75, 23)
+        btnLogin.TabIndex = 3
+        btnLogin.Text = "Login"
+        btnLogin.UseVisualStyleBackColor = True
+        ' 
+        ' lblPassword
+        ' 
+        lblPassword.AutoSize = True
+        lblPassword.Location = New Point(185, 215)
+        lblPassword.Name = "lblPassword"
+        lblPassword.Size = New Size(105, 30)
+        lblPassword.TabIndex = 2
+        lblPassword.Text = "Password"
+        ' 
+        ' lblUsername
+        ' 
+        lblUsername.AutoSize = True
+        lblUsername.Location = New Point(185, 142)
+        lblUsername.Name = "lblUsername"
+        lblUsername.Size = New Size(110, 30)
+        lblUsername.TabIndex = 1
+        lblUsername.Text = "Username"
+        ' 
+        ' lblTitle
+        ' 
+        lblTitle.AutoSize = True
+        lblTitle.Font = New Font("Segoe UI", 48.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblTitle.Location = New Point(6, 19)
+        lblTitle.Name = "lblTitle"
+        lblTitle.Size = New Size(982, 86)
+        lblTitle.TabIndex = 0
+        lblTitle.Text = "Inventory Management System"
+        ' 
+        ' txtEmail
+        ' 
+        txtEmail.Location = New Point(713, 190)
+        txtEmail.Name = "txtEmail"
+        txtEmail.Size = New Size(276, 35)
+        txtEmail.TabIndex = 28
+        ' 
+        ' txtFax
+        ' 
+        txtFax.Location = New Point(713, 127)
+        txtFax.Name = "txtFax"
+        txtFax.Size = New Size(276, 35)
+        txtFax.TabIndex = 27
+        ' 
+        ' txtTelephone
+        ' 
+        txtTelephone.Location = New Point(713, 78)
+        txtTelephone.Name = "txtTelephone"
+        txtTelephone.Size = New Size(276, 35)
+        txtTelephone.TabIndex = 25
+        ' 
+        ' txtwww
+        ' 
+        txtwww.Location = New Point(713, 247)
+        txtwww.Name = "txtwww"
+        txtwww.Size = New Size(276, 35)
+        txtwww.TabIndex = 23
+        ' 
+        ' txtMobile
+        ' 
+        txtMobile.Location = New Point(713, 28)
+        txtMobile.Name = "txtMobile"
+        txtMobile.Size = New Size(276, 35)
+        txtMobile.TabIndex = 22
+        ' 
+        ' txtPostCode
+        ' 
+        txtPostCode.Location = New Point(179, 280)
+        txtPostCode.Name = "txtPostCode"
+        txtPostCode.Size = New Size(323, 35)
+        txtPostCode.TabIndex = 21
+        ' 
+        ' txtAddress
+        ' 
+        txtAddress.Location = New Point(179, 127)
+        txtAddress.Multiline = True
+        txtAddress.Name = "txtAddress"
+        txtAddress.Size = New Size(323, 122)
+        txtAddress.TabIndex = 20
+        ' 
+        ' txtBalance
+        ' 
+        txtBalance.Location = New Point(179, 456)
+        txtBalance.Name = "txtBalance"
+        txtBalance.Size = New Size(323, 35)
+        txtBalance.TabIndex = 19
+        ' 
+        ' txtName
+        ' 
+        txtName.Location = New Point(179, 78)
+        txtName.Name = "txtName"
+        txtName.Size = New Size(323, 35)
+        txtName.TabIndex = 18
+        ' 
+        ' txtVatNum
+        ' 
+        txtVatNum.Location = New Point(179, 401)
+        txtVatNum.Name = "txtVatNum"
+        txtVatNum.Size = New Size(323, 35)
+        txtVatNum.TabIndex = 17
+        ' 
+        ' txtContactName
+        ' 
+        txtContactName.Location = New Point(179, 337)
+        txtContactName.Name = "txtContactName"
+        txtContactName.Size = New Size(323, 35)
+        txtContactName.TabIndex = 16
         ' 
         ' txtAccountNum
         ' 
@@ -233,23 +391,23 @@ Partial Class Form1
         lblEmail.TabIndex = 11
         lblEmail.Text = "Email"
         ' 
-        ' txtFax
+        ' lblFax
         ' 
-        txtFax.AutoSize = True
-        txtFax.Location = New Point(568, 132)
-        txtFax.Name = "txtFax"
-        txtFax.Size = New Size(46, 30)
-        txtFax.TabIndex = 10
-        txtFax.Text = "Fax"
+        lblFax.AutoSize = True
+        lblFax.Location = New Point(568, 132)
+        lblFax.Name = "lblFax"
+        lblFax.Size = New Size(46, 30)
+        lblFax.TabIndex = 10
+        lblFax.Text = "Fax"
         ' 
-        ' txtTelephone
+        ' lblTelephone
         ' 
-        txtTelephone.AutoSize = True
-        txtTelephone.Location = New Point(568, 78)
-        txtTelephone.Name = "txtTelephone"
-        txtTelephone.Size = New Size(114, 30)
-        txtTelephone.TabIndex = 9
-        txtTelephone.Text = "Telephone"
+        lblTelephone.AutoSize = True
+        lblTelephone.Location = New Point(568, 78)
+        lblTelephone.Name = "lblTelephone"
+        lblTelephone.Size = New Size(114, 30)
+        lblTelephone.TabIndex = 9
+        lblTelephone.Text = "Telephone"
         ' 
         ' lblMobile
         ' 
@@ -343,106 +501,29 @@ Partial Class Form1
         TabPage3.TabIndex = 2
         TabPage3.Text = "Credit Control"
         ' 
-        ' GroupBox1
+        ' DataGridView1
         ' 
-        GroupBox1.Controls.Add(txtPassword)
-        GroupBox1.Controls.Add(txtUsername)
-        GroupBox1.Controls.Add(btnExit)
-        GroupBox1.Controls.Add(BtnReset)
-        GroupBox1.Controls.Add(btnLogin)
-        GroupBox1.Controls.Add(lblPassword)
-        GroupBox1.Controls.Add(lblUsername)
-        GroupBox1.Controls.Add(lblTitle)
-        GroupBox1.Location = New Point(12, 9)
-        GroupBox1.Name = "GroupBox1"
-        GroupBox1.Size = New Size(1321, 633)
-        GroupBox1.TabIndex = 0
-        GroupBox1.TabStop = False
-        GroupBox1.Text = "GroupBox1"
-        ' 
-        ' txtPassword
-        ' 
-        txtPassword.Location = New Point(248, 207)
-        txtPassword.Name = "txtPassword"
-        txtPassword.Size = New Size(260, 23)
-        txtPassword.TabIndex = 7
-        ' 
-        ' txtUsername
-        ' 
-        txtUsername.Location = New Point(248, 139)
-        txtUsername.Name = "txtUsername"
-        txtUsername.Size = New Size(260, 23)
-        txtUsername.TabIndex = 6
-        ' 
-        ' btnExit
-        ' 
-        btnExit.Location = New Point(433, 274)
-        btnExit.Name = "btnExit"
-        btnExit.Size = New Size(75, 23)
-        btnExit.TabIndex = 5
-        btnExit.Text = "Exit"
-        btnExit.UseVisualStyleBackColor = True
-        ' 
-        ' BtnReset
-        ' 
-        BtnReset.Location = New Point(317, 274)
-        BtnReset.Name = "BtnReset"
-        BtnReset.Size = New Size(75, 23)
-        BtnReset.TabIndex = 4
-        BtnReset.Text = "Reset"
-        BtnReset.UseVisualStyleBackColor = True
-        ' 
-        ' btnLogin
-        ' 
-        btnLogin.Location = New Point(194, 274)
-        btnLogin.Name = "btnLogin"
-        btnLogin.Size = New Size(75, 23)
-        btnLogin.TabIndex = 3
-        btnLogin.Text = "Login"
-        btnLogin.UseVisualStyleBackColor = True
-        ' 
-        ' lblPassword
-        ' 
-        lblPassword.AutoSize = True
-        lblPassword.Location = New Point(185, 215)
-        lblPassword.Name = "lblPassword"
-        lblPassword.Size = New Size(57, 15)
-        lblPassword.TabIndex = 2
-        lblPassword.Text = "Password"
-        ' 
-        ' lblUsername
-        ' 
-        lblUsername.AutoSize = True
-        lblUsername.Location = New Point(185, 142)
-        lblUsername.Name = "lblUsername"
-        lblUsername.Size = New Size(60, 15)
-        lblUsername.TabIndex = 1
-        lblUsername.Text = "Username"
-        ' 
-        ' lblTitle
-        ' 
-        lblTitle.AutoSize = True
-        lblTitle.Font = New Font("Segoe UI", 48.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lblTitle.Location = New Point(6, 19)
-        lblTitle.Name = "lblTitle"
-        lblTitle.Size = New Size(982, 86)
-        lblTitle.TabIndex = 0
-        lblTitle.Text = "Inventory Management System"
+        DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridView1.Location = New Point(568, 376)
+        DataGridView1.Name = "DataGridView1"
+        DataGridView1.Size = New Size(714, 174)
+        DataGridView1.TabIndex = 37
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1352, 661)
-        Controls.Add(GroupBox1)
         Controls.Add(TabControl1)
         Name = "Form1"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "Form1"
         TabControl1.ResumeLayout(False)
         TabPage1.ResumeLayout(False)
         TabPage1.PerformLayout()
         GroupBox1.ResumeLayout(False)
         GroupBox1.PerformLayout()
+        CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
@@ -470,29 +551,40 @@ Partial Class Form1
     Friend WithEvents lblAccStatus As Label
     Friend WithEvents lblwww As Label
     Friend WithEvents lblEmail As Label
-    Friend WithEvents txtFax As Label
-    Friend WithEvents txtTelephone As Label
+    Friend WithEvents lblFax As Label
+    Friend WithEvents lblTelephone As Label
     Friend WithEvents lblMobile As Label
-    Friend WithEvents TextBox7 As TextBox
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents txtPostCode As TextBox
+    Friend WithEvents txtAddress As TextBox
+    Friend WithEvents txtBalance As TextBox
+    Friend WithEvents txtName As TextBox
+    Friend WithEvents txtVatNum As TextBox
+    Friend WithEvents txtContactName As TextBox
     Friend WithEvents txtAccountNum As TextBox
-    Friend WithEvents TextBox8 As TextBox
-    Friend WithEvents TextBox9 As TextBox
-    Friend WithEvents TextBox11 As TextBox
-    Friend WithEvents TextBox12 As TextBox
-    Friend WithEvents TextBox13 As TextBox
-    Friend WithEvents TextBox14 As TextBox
+    Friend WithEvents txtEmail As TextBox
+    Friend WithEvents txtFax As TextBox
+    Friend WithEvents txtTelephone As TextBox
+    Friend WithEvents txtwww As TextBox
+    Friend WithEvents txtMobile As TextBox
+    Friend WithEvents cmbAcc_Status As ComboBox
+
+    Friend WithEvents btnEnd As Button
+    Friend WithEvents btnDelete As Button
+    Friend WithEvents btnPrevious As Button
+    Friend WithEvents btnNext As Button
+    Friend WithEvents btnSave As Button
+    Friend WithEvents btnAdd As Button
+
 
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
         If txtUsername.Text = "admin" And txtPassword.Text = "password" Then
             GroupBox1.Visible = False
         Else
-            MessageBox.Show("You have entered incorrect login details", "Closing Exams",
+            MessageBox.Show("You have entered incorrect login details", "Message",
                             MessageBoxButtons.OK, MessageBoxIcon.Question)
+            txtPassword.Clear()
+            txtUsername.Clear()
+            txtUsername.Focus()
         End If
     End Sub
 
@@ -502,8 +594,23 @@ Partial Class Form1
     End Sub
 
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
-        Dim result = MessageBox.Show("Are you sure you want to exit?", "Closing Exams",
+        Dim result = MessageBox.Show("Are you sure you want to exit?", "Message",
                                      MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+
+        If (result = DialogResult.Yes) Then
+            Application.Exit()
+        End If
     End Sub
+
+    Private Sub btnEnd_Click(sender As Object, e As EventArgs) Handles btnEnd.Click
+        Dim result = MessageBox.Show("Are you sure you want to exit?", "Message",
+                                     MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+
+        If (result = DialogResult.Yes) Then
+            Application.Exit()
+        End If
+    End Sub
+
+    Friend WithEvents DataGridView1 As DataGridView
 
 End Class
